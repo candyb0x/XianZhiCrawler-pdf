@@ -29,7 +29,7 @@ def generate_pdf(article, num):
             return 2
 
         # 404检查
-        if '您无权查看' in driver.page_source or '已被删除' in driver.page_source::
+        if '您无权查看' in driver.page_source or '已被删除' in driver.page_source:
             print(f"\033[31m[!] 404 Not Found: {article}\033[0m")
             return 1
         # 等待文档加载
